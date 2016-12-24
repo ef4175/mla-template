@@ -1,0 +1,198 @@
+% Font size
+\documentclass[12pt]{article}
+
+% Page layout
+\usepackage[papersize={8.5in, 11in}, margin=1in]{geometry}
+
+% Double spacing
+% \usepackage{setspace}
+% \doublespacing
+\linespread{2}
+
+% Pagination
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{} 
+\chead{} 
+\rhead{Surname \thepage} 
+\lfoot{} 
+\cfoot{} 
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt}
+
+% Meta: name, professor, course, date
+\newenvironment{meta}{
+    \noindent
+    First Surname\\
+    Professor X\\
+    COURSE 000\\
+    0000 Month 00
+}
+
+% Paper title
+\newenvironment{papertitle}{\begin{center} Paper Title \end{center}}
+
+% Paragraph
+\newenvironment{p}{\setlength{\parindent}{0.5in}}
+
+% Long quotation
+\newenvironment{longquote}{
+    \setlength{\parindent}{1in}
+    \setlength{\hangindent}{1in}
+}
+
+% No indentation after a long quotation
+\newenvironment{afterlongquote}{\setlength{\parindent}{0in}}
+
+% Works cited page
+\newenvironment{workscited}{
+    \newpage
+    \begin{center} Works Cited \end{center}
+}{\newpage}
+
+% Citation entry
+\newenvironment{cit}{
+    \setlength{\parindent}{0in}
+    \setlength{\hangindent}{0.5in}
+}
+
+\begin{document}
+    \begin{meta}
+    \end{meta}
+    \begin{papertitle}
+    \end{papertitle}
+    \begin{p}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum 
+    nulla mauris. Nunc lacinia eleifend gravida. Aliquam eget ullamcorper 
+    massa. Mauris id velit tortor. Pellentesque lorem erat, hendrerit volutpat 
+    sagittis eget, vehicula id nisl. Nullam vulputate facilisis lectus, in 
+    condimentum mi imperdiet at. Etiam nisi metus, rutrum pulvinar lacus sit 
+    amet, fermentum auctor ex. Duis arcu leo, bibendum in dapibus vel, iaculis 
+    a mi. Morbi bibendum vel risus ullamcorper sollicitudin. Pellentesque eu 
+    fringilla nunc. Duis volutpat sed libero vitae rutrum. Morbi sodales id 
+    dui at tincidunt. Quisque ullamcorper viverra dui vel dictum. Integer 
+    laoreet ultrices ante, a interdum mauris dapibus at. Cras facilisis eget 
+    urna sed tincidunt.
+    \end{p}
+    \begin{p}
+    Vestibulum dolor urna, pulvinar varius finibus quis, pulvinar id leo. 
+    Etiam suscipit ex placerat tellus placerat varius. Nullam eu imperdiet 
+    urna. Praesent pharetra lacus ac magna euismod, at consequat arcu 
+    sagittis. Phasellus eros sapien, vehicula sit amet tortor vel, 
+    pellentesque maximus leo. Phasellus consectetur felis at leo convallis 
+    commodo. Donec auctor, elit a blandit rutrum, velit velit porta diam, sed 
+    auctor tortor urna a arcu.
+    \end{p}
+    \begin{p}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae 
+    lacinia metus, euismod posuere tortor. Nullam eleifend nibh lacus, egestas 
+    pretium justo facilisis id. Pellentesque eget lorem pharetra, posuere 
+    tortor non, tincidunt sem. Duis ullamcorper non libero at euismod. Quisque 
+    et nunc rhoncus, interdum eros at, pulvinar diam. Vivamus condimentum 
+    aliquet pharetra. Praesent laoreet tempus ipsum, vitae vestibulum tortor 
+    vulputate sed. Vivamus luctus ornare nisl sit amet volutpat. Proin id 
+    purus convallis, finibus risus eget, lacinia mauris. Suspendisse potenti. 
+    Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum 
+    euismod tempor felis, non pretium quam vehicula ut. Suspendisse facilisis 
+    nunc eu mattis laoreet. Curabitur congue at ante a malesuada. Donec sed 
+    nunc non lacus sodales dictum. Aenean aliquam tortor suscipit turpis 
+    pulvinar cursus. Suspendisse eu finibus dolor. Ut in augue ullamcorper, 
+    bibendum orci ut, vulputate neque. Sed ullamcorper congue aliquet. Aenean 
+    posuere aliquam orci, non fringilla eros consectetur non. Donec at semper 
+    nulla. Sed pharetra dolor sed sapien molestie, nec porttitor risus 
+    imperdiet. Vivamus eget luctus est.
+    \end{p}
+    \begin{p}
+    Cras a nulla tortor. Nunc condimentum, enim eget gravida volutpat, sem 
+    nulla varius dui, eget pretium massa purus eu diam. Vestibulum id ligula 
+    et orci suscipit ultrices. Donec posuere urna diam, nec mattis velit 
+    ullamcorper sit amet. Vivamus tellus mi, commodo ac ultrices malesuada, 
+    efficitur vel risus. Proin leo ipsum, sagittis et interdum quis, sodales 
+    vehicula velit. Donec suscipit consequat velit eget tincidunt. Aenean 
+    elementum turpis at quam placerat accumsan. Nullam pharetra aliquet 
+    volutpat. Morbi semper, tortor quis finibus tempor, ante odio mollis enim, 
+    posuere sagittis nibh felis vitae nisl. Nulla a vestibulum neque. Etiam 
+    placerat lobortis molestie. Vestibulum et quam eu odio mollis ornare a 
+    quis enim. Aliquam nisi sapien, euismod a mi eu, sodales pretium ligula. 
+    Cras posuere rutrum urna, id maximus tellus:
+    \end{p}
+    \begin{longquote}
+    Vestibulum in laoreet elit. Aenean vestibulum a ipsum vitae vulputate. 
+    Morbi ante sem, porttitor eu porta quis, eleifend quis urna. Vestibulum 
+    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+    Curae; Fusce porttitor orci sed sem ullamcorper, ut egestas est finibus. 
+    Sed massa dolor, vulputate in augue non, pretium scelerisque libero. Donec 
+    ultricies facilisis dolor at lacinia. Nullam sed fringilla lacus. 
+    Vestibulum semper dolor vitae neque consequat aliquam. Donec venenatis 
+    aliquet risus, et consectetur mauris viverra eget. Quisque aliquet lorem 
+    eros, nec sollicitudin nisl interdum vitae. Pellentesque dapibus justo nec 
+    dolor congue hendrerit. Nullam vel metus nec tellus tempus iaculis. 
+    Suspendisse tempus velit ac volutpat finibus.
+    \end{longquote}
+    \begin{afterlongquote}
+    Integer bibendum turpis eros, quis dictum nisi euismod quis. Nam vitae 
+    auctor odio, vel blandit neque. Pellentesque ac elit vitae diam rutrum 
+    venenatis eu vel lacus. Interdum et malesuada fames ac ante ipsum primis 
+    in faucibus. Quisque efficitur tempor viverra. Phasellus et enim lectus. 
+    Ut rutrum in nulla id aliquet. Nulla vehicula tincidunt orci, nec sagittis 
+    ex faucibus sit amet. Fusce risus felis, iaculis quis dui ac, lacinia 
+    pharetra tellus. Etiam venenatis dolor quis tincidunt gravida. Nam 
+    hendrerit libero eu orci vulputate, quis porta erat consectetur. Curabitur 
+    aliquam neque nisl, in scelerisque nisl volutpat aliquam. Phasellus sit 
+    amet elit ipsum. In et urna sed nibh imperdiet laoreet.
+    \end{afterlongquote}
+    \begin{p}
+    Ut condimentum mollis massa, et laoreet ligula fringilla non. Mauris 
+    suscipit vel justo egestas rutrum. Pellentesque vel odio nulla. Nulla 
+    sodales neque non mollis rhoncus. Fusce in leo ut ante sollicitudin 
+    bibendum ut ac leo. Sed pulvinar tincidunt ligula quis sagittis. Sed quam 
+    nisi, venenatis sit amet tempor non, faucibus a quam. Aenean hendrerit 
+    efficitur sapien, a mattis ante blandit non. Duis sed feugiat odio, at 
+    congue mi. Vestibulum semper dui sit amet tortor porttitor tempus. Proin 
+    quis fringilla orci. Maecenas enim elit, consectetur id nulla vel, 
+    vestibulum tristique felis.
+    \end{p}
+    \begin{p}
+    Mauris pretium justo dui, ut aliquet nisi vehicula a. Vestibulum luctus ex 
+    erat, quis fringilla urna mattis non. Pellentesque vitae nibh nunc. Duis 
+    eget ligula ac nisi mattis lobortis ut vel nisl. Donec aliquet felis et 
+    pretium lobortis. Pellentesque habitant morbi tristique senectus et netus 
+    et malesuada fames ac turpis egestas. Ut ultrices nisl aliquam lacus 
+    molestie accumsan. Donec sed turpis faucibus, condimentum purus eu, 
+    sollicitudin ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Nunc sollicitudin cursus leo, eu dictum justo rutrum at. Suspendisse vel 
+    augue est. Proin malesuada justo sed leo maximus, non ultrices nulla 
+    pharetra. Etiam venenatis semper mi, id gravida elit varius sit amet. 
+    Nulla et sem quis ligula viverra dictum non vel nisi. Suspendisse quis 
+    mauris arcu. Sed vitae ornare leo. In eget tortor eget elit ultrices 
+    suscipit. Nunc nec sapien in ex pharetra vehicula dictum sed massa. 
+    Pellentesque orci sapien, malesuada ut dictum et, tincidunt porttitor 
+    nunc. Nam ornare pharetra nulla, eu consectetur est auctor vitae. Mauris 
+    auctor enim a orci ullamcorper consectetur.
+    \end{p}
+    \begin{workscited}
+    \begin{cit}
+    Vivamus tincidunt dapibus velit, ac dictum turpis semper nec. Morbi ac 
+    ligula leo. Donec condimentum blandit euismod. Integer et eros ex. Morbi 
+    pulvinar, massa vel posuere eleifend, magna felis varius purus, vitae 
+    lacinia turpis mauris id ex. Quisque nec neque lorem. Nunc ultrices orci 
+    dui. Cras commodo odio sed velit congue ultrices. Morbi euismod convallis 
+    tellus. Cras porttitor augue enim, et euismod nunc semper a.
+    \end{cit}
+    \begin{cit}
+    Nam nec vestibulum sem, ac pharetra tortor. Ut in orci diam. Ut vestibulum 
+    eleifend quam. Donec scelerisque euismod sem. Aliquam nisi nisi, rutrum et 
+    ornare eu, lacinia at erat. Class aptent taciti sociosqu ad litora 
+    torquent per conubia nostra, per inceptos himenaeos. Quisque sagittis 
+    tempor sapien, et gravida nisi vulputate eu.
+    \end{cit}
+    \begin{cit}
+    Aliquam posuere tortor vel velit dictum, quis pretium lacus ultricies. Nam 
+    non odio vel nisl facilisis tempor ac ut sem. Sed aliquam vulputate metus 
+    eu rutrum. Sed volutpat est vitae nulla posuere tristique. Aliquam 
+    scelerisque placerat vulputate. Fusce sit amet commodo arcu. Nam posuere 
+    rhoncus vestibulum. Pellentesque volutpat tincidunt rhoncus.
+    \end{cit}
+    \end{workscited}
+\end{document}

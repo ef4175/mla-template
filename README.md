@@ -1,0 +1,1 @@
+# MLA Template for LaTeX
